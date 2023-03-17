@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./assets/belgant-aesthetic.otf");
+@import url("./assets/Gilroy-ExtraBold.otf");
+@import url("./assets/Gilroy-Light.otf");
+
+@font-face {
+  font-family: "Belgant-Aesthetic";
+  src: url("./assets/belgant-aesthetic.otf");
+  /* src: url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype'); */
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/Gilroy-Light.otf");
+  /* src: url("./assets/Gilroy-ExtraBold.otf"); */
+  /* src: url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Regular.woff2') ,
+         url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype'); */
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.home_section_one_bg {
+  background: url("../public/pexels-antoni-shkraba-8206809.jpg");
+  background-position: center center;
+  object-fit: cover;
+  background-size: cover; 
+  position: relative;
+
+}
+.home_section_one_bg ::before{
+  height: 100%;
+  width: 100%;
+  position: absolute; 
+  background-color: rgba(0, 0, 0,0.15);
+  top:0 ;
+  left:0;
+  z-index: -1;
+  content: '';
+}
